@@ -1,2 +1,2 @@
 # Paayment_Gateway_outlet
-Payment form usin html and CSS
+Payment form using html and CSS
