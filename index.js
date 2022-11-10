@@ -23,10 +23,13 @@ db.once('open', () => console.log("Connected to Database"))
 app.post("/sign_up", (req, res) => {
     var client = req.body.name;
     var email = req.body.email;
-    var date = new Date();
-    var orderdate = date.getFullYear() + "-" + (date.getMonth() + 1) + "-" + date.getDate();
+    var compname = req.body.compname;
     var orderitem = req.body.orderitem;
     console.log(orderdate);
+    var date = new Date();
+    var orderdate = date.getFullYear() + "-" + (date.getMonth() + 1) + "-" + date.getDate();
+    var future = new Date();
+    var deliverdate = future.setDate(future.getDate() + 30);
     // var phno = req.body.phno;
     // var password = req.body.password;
     // var c_password = req.body.c_password;
@@ -34,6 +37,7 @@ app.post("/sign_up", (req, res) => {
     var data = {
         "client": client,
         "email": email,
+        "compname": compname,
         "orderdate": orderdate,
         "orderitem": orderitem,
         "status": "Pending",
