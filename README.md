@@ -2,4 +2,4 @@
 Payment form using html and CSS
 
 Have a look on my website
-https://jasdeepkaur1381.github.io/Paayment_Gateway_outlet/
+https://jasdeepkaur1381.github.io/Paayment_Gateway_outlet/public/index.html
